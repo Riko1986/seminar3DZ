@@ -1,10 +1,15 @@
-﻿// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
-double x, y, z, x1, y1, z, len;
-x = Convert.ToDouble(Console.ReadLine());
-y = Convert.ToDouble(Console.ReadLine());
-z = Convert.ToDouble(Console.ReadLine());
-x1 = Convert.ToDouble(Console.ReadLine());
-y1 = Convert.ToDouble(Console.ReadLine());
-z1= Convert.ToDouble(Console.ReadLine());
-len = Math.Sqrt((x - x1) * (x - x1) + (y - y1) * (y - y1) + (z - z1) * (z - z1));
-Console.WriteLine(len);
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+int n = Convert.ToInt32(Console.ReadLine());
+int n1, n2, n4, n5;
+n1 = n / 10000;
+n2 = (n % 10000) / 1000;
+n4 = (n % 100) / 10;
+n5 = n % 10;
+if(n1 == n5 && n2 == n4){
+
+Console.WriteLine("Это число палиндром");
+}
+else{
+    Console.WriteLine("Нет");
+}
+
